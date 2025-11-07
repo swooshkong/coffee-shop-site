@@ -1,20 +1,123 @@
 :root {
   --primary-color: #6b4f3b;
-  --accent-color: #d9a066;
+  --accent-color:#6b4f3b
   --background-color: #4B2E1E;
-  --text-color: #333;
+  --text-color: #1c3b02;
   --font-family: 'Segoe UI', sans-serif;
 }
-footer-bar {
+
+footer {
+  width: 100%;
+  background-color: #3b2a1a; /* dark brown bar */
+  color: #fff;
+  padding: 20px 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.kong-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 250px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+.kong-showcase img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-side,
+.jungle-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  max-height: 320px; /* adjust as needed */
+  overflow: hidden;
+  width: fit-content;
+  
+}
+
+
+.image-row {
+  display: flex;
+  justify-content: space-between; /* pushes images to left and right */
+  align-items: center;
+  margin: 30px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.image-row img {
+  width: 60%; /* ensures both images are equal size */
+  height: auto;
+  object-fit: contain; /* keeps aspect ratio */
+  border-radius: 8px; /* optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+}
+
+
+
+
+
+.centered-images {
+  display: flex;
+  justify-content: left;
+  align-items: right;
+  gap: 30px; /* space between images */
+  margin: 30px auto;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.centered-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px; /* optional: adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: adds subtle shadow */
+}
+
+.footer-bar {
   background-color: #2c2c2c;
   padding: 20px;
   text-align: center;
   color: #035a2e;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
 }
 
 .footer-bar h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  height: fit-content;
 }
 
 .social-links {
@@ -24,6 +127,7 @@ footer-bar {
   display: flex;
   justify-content: center;
   gap: 20px;
+  min-height: auto ;
 }
 
 .social-links li a {
@@ -46,7 +150,7 @@ footer-bar {
 
 footer {
   background-color: #4B2E1E;
-  color: #F5EBDD;
+  color: #4B2E1E;
   text-align: center;
   padding: 1rem 0;
   font-family: 'Open Sans', sans-serif;
@@ -56,7 +160,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  gap: 1rem;
+  height: fit-content ;
+  width: fit-content ;
+} 
 
 .social-links {
   list-style: none;
@@ -64,6 +171,8 @@ footer {
   gap: 1rem;
   padding: 0;
   margin-top: 0.5rem;
+  height: auto;
+  width: auto;
 }
 
 .social-links li a img {
@@ -100,9 +209,9 @@ body, html {
 
 /* Header */
 .site-header {
-  background-color: #4e2d1d; /* rich dark brown */
+  background-color: #2d1d; /* rich dark brown */
   padding: 1rem;
-  border-bottom: 2px solid #d9a066; /* golden accent */
+  border-bottom: 2px solid #2c1e08; /* soft beige */
   height: auto;
 width: auto;
 }
@@ -130,7 +239,7 @@ width: auto;
 }
 
 .main-nav a {
-  color: #d3b69e; /* soft beige */
+  color: #04f324; /* soft beige */
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
@@ -138,7 +247,7 @@ width: auto;
 
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
-  color: #f2e7d5;
+  color: #46d803;
   text-decoration: underline;
 }
 
@@ -168,7 +277,7 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: #4e2d1d;
-  color: #d3b69e;
+  color: #4e2d1d;
   font-size: 0.9rem;
 }
 
@@ -305,7 +414,7 @@ body, html {
 .site-header {
   background-color: #382312;
   padding: 0.5rem 1rem;
-  border-bottom: 2px solid #d9a066;
+  border-bottom: 2px solid #87d966;
 }
 
 .header-content {
@@ -330,7 +439,7 @@ body, html {
 .site-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #d3b69e;
+  color: #9ed3a1;
   margin: 0;
 }
 
@@ -344,7 +453,7 @@ body, html {
 }
 
 .main-nav a {
-  color: #d3b69e;
+  color: #020202;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.95rem;
